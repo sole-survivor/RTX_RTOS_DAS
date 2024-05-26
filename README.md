@@ -6,7 +6,7 @@ The data acquisition system is built using the ARM-7 Based LPC2129 Microcontroll
 The sensors used include the onboard temperature and potentiometer (used as a simulation for pressure) on the Rhydolabz LPC2129 Microcontroller development board, DS1307 RTC interfaced with I2C for printing the time of data acquisition, and the MCP3204 External ADC to connect LDR interfaced through SPI.<br>
 # RTOS Implementation <br>
 The real-time operating system used in the project  is the RTX RTOS which comes native with the Keil Vision 5. The Keil RTX is a royalty-free, deterministic Real-Time Operating System designed for ARM and Cortex-M devices. Here we have designed and implemented Cooperative Multitasking (defined in RTX_Config) to complete tasks so that they work cooperatively. <br>
-When making your project be sure to go to Target Options and select Operating system as "RTX Kernel". <br>
+When making your project be sure to go to Target Options and select Operating system as "RTX Kernel". <br><br>
 ![](https://github.com/sole-survivor/RTX_RTOS_DAS/blob/main/RTX_Kernel.png)
 
 Also, use the startup code provided in the repository or edit the startup file of your LPC Board as follows:
